@@ -1,0 +1,13 @@
+<input
+  [(ngModel)]="_value"
+  [owlDateTime]="date"
+  [owlDateTimeTrigger]="date"
+  class="form-control"
+  (ngModelChange)="changed()"
+  [id]="id" />
+<owl-date-time
+  #date
+  [firstDayOfWeek]="firstDayOfWeek"
+  [stepMinute]="stepMinute"
+  [pickerType]="_pickerType"
+></owl-date-time>
