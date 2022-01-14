@@ -11,6 +11,12 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
+    "paths": {
+      "ng-date-time-picker": [
+        "dist/ng-date-time-picker/ng-date-time-picker",
+        "dist/ng-date-time-picker"
+      ]
+    },
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
