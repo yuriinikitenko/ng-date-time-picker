@@ -6,7 +6,7 @@
 <date-time-picker
   formControlName="datetime1"
   id="datetime1"
-  pickertype="both"
+  pickerType="both"
 ></date-time-picker>
 <p>{{ getFormValue("datetime1") }}</p>
 
@@ -14,7 +14,7 @@
 <date-time-picker
   formControlName="datetime2"
   id="datetime2"
-  pickertype="calendar"
+  pickerType="calendar"
 ></date-time-picker>
 <p>{{ getFormValue("datetime2") }}</p>
 
@@ -22,7 +22,7 @@
 <date-time-picker
   formControlName="datetime3"
   id="datetime3"
-  pickertype="timer"
+  pickerType="timer"
 ></date-time-picker>
 <p>{{ getFormValue("datetime3") }}</p>
 
@@ -30,9 +30,24 @@
 <date-time-picker
   formControlName="datetime4"
   id="datetime4"
-  pickertype="timer"
+  pickerType="timer"
   stepMinute=5
 ></date-time-picker>
 <p>{{ getFormValue("datetime4") }}</p>
+
+</form>
+
+<h2>Model-Driven Form</h2>
+
+<form novalidate>
+
+<h3>Date and Time</h3>
+<date-time-picker
+  [(ngModel)]="datetime5"
+  id="datetime5"
+  name="datetime5"
+  pickerType="both"
+></date-time-picker>
+{{ datetime5 }}
 
 </form>

@@ -17,7 +17,7 @@ export class DateTimePickerComponent implements ControlValueAccessor {
   _pickerType: PickerType = 'both';
   _stepMinute: number = 1;
 
-  @Input('pickertype')
+  @Input('pickerType')
   set pickerType(value: PickerType) {
     this._pickerType = value;
   }
