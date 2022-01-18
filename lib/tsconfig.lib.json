@@ -1,12 +1,23 @@
 /* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
-  "extends": "../../tsconfig.json",
+  "extends": "../tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../out-tsc/lib",
+    "outDir": "../out-tsc/lib",
     "declaration": true,
     "declarationMap": true,
     "inlineSources": true,
-    "types": []
+    "types": [],
+    "target": "es2015",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "lib": [
+      "dom",
+      "es2015"
+    ]
   },
   "exclude": [
     "src/test.ts",
