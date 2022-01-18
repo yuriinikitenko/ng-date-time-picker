@@ -117,7 +117,7 @@
           },
           "configurations": {
             "production": {
-              "tsConfig": "lib/tsconfig.lib.prod.json"
+              "tsConfig": "lib/tsconfig.lib.json"
             },
             "development": {
               "tsConfig": "lib/tsconfig.lib.json"
