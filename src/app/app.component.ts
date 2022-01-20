@@ -7,6 +7,7 @@ import {FormGroup, FormControl} from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title = 'date-time-picker-app';
   datetime5: any = '';
 
   form = new FormGroup({

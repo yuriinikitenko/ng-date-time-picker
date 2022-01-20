@@ -1,10 +1,11 @@
 {
-  "name": "ng-date-time-picker-app",
+  "name": "app",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:lib": "ng build lib",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -12,14 +13,15 @@
   "dependencies": {
     "@angular/animations": "~13.1.0",
     "@angular/cdk": "^13.1.2",
-    "@angular/common": "~13.1.0",
+    "@angular/common": "^13.1.3",
     "@angular/compiler": "~13.1.0",
-    "@angular/core": "~13.1.0",
+    "@angular/core": "^13.1.3",
     "@angular/forms": "~13.1.0",
     "@angular/platform-browser": "~13.1.0",
     "@angular/platform-browser-dynamic": "~13.1.0",
     "@angular/router": "~13.1.0",
     "@ngx-translate/core": "^14.0.0",
+    "@types/estree": "0.0.50",
     "ng-pick-datetime": "^7.0.0",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",

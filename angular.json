@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-date-time-picker-app": {
+    "app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,11 +20,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ng-date-time-picker-app",
+            "outputPath": "dist/app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.app.json",
+            "tsConfig": "tsconfig.json",
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ng-date-time-picker-app:build:production"
+              "browserTarget": "app:build:production"
             },
             "development": {
-              "browserTarget": "ng-date-time-picker-app:build:development"
+              "browserTarget": "app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng-date-time-picker-app:build"
+            "browserTarget": "app:build"
           }
         },
         "test": {
@@ -104,7 +104,7 @@
         }
       }
     },
-    "ng-date-time-picker": {
+    "lib": {
       "projectType": "library",
       "root": "lib",
       "sourceRoot": "lib/src",
@@ -136,5 +136,5 @@
       }
     }
   },
-  "defaultProject": "ng-date-time-picker-app"
+  "defaultProject": "app"
 }
