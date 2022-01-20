@@ -18,6 +18,6 @@ export class AppComponent {
   });
 
   getFormValue = (id: string) => {
-    return this.form.get(id)?.value;
+    return this.form.get(id) ? this.form.get(id).value : null;
   }
 }
