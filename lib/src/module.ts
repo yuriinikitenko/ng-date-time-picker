@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {TranslateModule, TranslateService} from '@ngx-translate/core';
 import {DateTimePickerComponent} from './date-time-picker.component';
 import {OwlDateTimeModule, OwlNativeDateTimeModule, DateTimeAdapter, OwlDateTimeIntl} from 'ng-pick-datetime';
@@ -21,7 +21,8 @@ export function OwlDateTimeIntlFactory(translate: TranslateService) {
     TranslateModule.forRoot(),
     OwlDateTimeModule,
     OwlNativeDateTimeModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     {
